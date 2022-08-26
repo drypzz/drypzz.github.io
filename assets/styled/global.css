@@ -478,6 +478,145 @@ body span.info-span{
     content: '10%';
 }
 
+/* contact.html */
+
+.main .container .contact-main-content{
+    text-align: center;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.main .container .contact-main-content span.info{
+    font-size: 50px;
+}
+
+.main .container .contact-main-content p{
+    margin: 50px 0;
+    color: #fff;
+    user-select: none;
+}
+
+/* contact */
+
+.contact{
+    width: 100%;
+    height: 100%;
+    margin-top: -120px;
+}
+
+.contact .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.contact .contact-container hr{
+    width: 80%;
+    outline: none;
+    border: none;
+    margin: 30px;
+    background: radial-gradient(circle, var(--primary) 0, #006ef1b8 100%);
+    height: 4px;
+}
+
+.contact .contact-container .contact-content{
+    color: var(--primary);
+    margin: 20px 0;
+}
+
+.contact .contact-container .contact-content .contact-icons-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .contact-container .contact-content .contact-icons-main .contact-icons-content{
+    margin: 0 10px;
+    text-align: center;
+}
+
+.contact .contact-container .contact-content .contact-icons-main .contact-icons-content a i{
+    padding: 20px;
+    color: var(--body);
+    border-radius: 50%;
+    background-color: var(--primary);
+    transition: all .5s ease;
+}
+
+.contact .contact-container .contact-content .contact-icons-main .contact-icons-content a i:hover{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.contact .contact-container .contact-content form{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .contact-container .contact-content form .form-container{
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: var(--quinto);
+}
+
+.contact .contact-container .contact-content form .form-container .form-group{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.contact .contact-container .contact-content form .form-container .form-group label{
+    margin-bottom: 10px;
+    user-select: none;
+    display: block;
+}
+
+.contact .contact-container .contact-content form .form-container .form-group input, .contact .contact-container .contact-content form .form-container .form-group textarea, .contact .contact-container .contact-content form .form-container .form-group select{
+    width: 100%;
+    outline: none;
+    resize: none;
+    color: var(--primary);
+    background: none;
+    border: 1px solid var(--primary);
+    padding: 10px;
+}
+
+.contact .contact-container .contact-content form .form-container .form-group select option{
+    background-color: var(--body);
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact .contact-container .contact-content form .form-container .form-group select option:hover{
+    background-color: var(--primary);
+}
+
+.contact .contact-container .contact-content form .form-container .form-group input[type = 'submit']{
+    transition: all 600ms ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact .contact-container .contact-content form .form-container .form-group input[type = 'submit']:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+
 /* projects.html */
 
 .main .container .projects-main-content{
@@ -607,6 +746,30 @@ footer .footer-container .footer-content{
         margin: 0 auto;
     }
 
+    /* contact.html */
+
+    .contact{
+        margin-top: -25px;
+    }
+
+    .contact .contact-container hr{
+        width: 100%;
+    }
+
+    .main .container .contact-main-content span.info.contact{
+        font-size: 40px;
+    }
+
+    .contact .contact-container .contact-content form{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact .contact-container .contact-content form .form-container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
     /* projects.html */
 
     .projects{
@@ -703,7 +866,7 @@ footer .footer-container .footer-content{
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 25vh;
+        height: 40vh;
         font: 1.6rem;
     }
 
