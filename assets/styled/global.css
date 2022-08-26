@@ -537,23 +537,37 @@ body span.info-span{
 }
 
 .contact .contact-container .contact-content .contact-icons-main .contact-icons-content{
-    margin: 0 10px;
+    margin: 10px 20px;
     text-align: center;
+}
+
+.contact .contact-container .contact-content .contact-icons-main .contact-icons-content span a{
+    color: var(--primary);
+    transition: all 600ms ease-in-out;
+}
+
+
+.contact .contact-container .contact-content .contact-icons-main .contact-icons-content span a:hover{
+    color: var(--quarto);
 }
 
 .contact .contact-container .contact-content .contact-icons-main .contact-icons-content a i{
     padding: 20px;
-    color: var(--body);
+    color: var(--primary);
     border-radius: 50%;
-    background-color: var(--primary);
-    transition: all .5s ease;
+    transform: scale(1.2);
+    border: 1px solid var(--primary);
+    background: none;
+    transition: all 500ms ease-in-out;
 }
 
 .contact .contact-container .contact-content .contact-icons-main .contact-icons-content a i:hover{
-    background-color: var(--secondary);
+    background-color: var(--primary);
+    transform: scale(1.1);
     color: #fff;
 }
 
+/* 
 .contact .contact-container .contact-content form{
     width: 100%;
     height: 100%;
@@ -614,7 +628,7 @@ body span.info-span{
 .contact .contact-container .contact-content form .form-container .form-group input[type = 'submit']:hover{
     background-color: var(--primary);
     color: #fff;
-}
+} */
 
 
 /* projects.html */
