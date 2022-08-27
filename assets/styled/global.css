@@ -91,6 +91,20 @@ body span.info-span{
     padding: 5px;
 }
 
+/* anim's */
+
+@keyframes animOpacityGlobal {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animScaleGlobal {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
 /* loader */
 
 .loader-container{
@@ -330,12 +344,16 @@ body span.info-span{
 
 .about .about-container .about-content p{
     max-width: 1000px;
+    opacity: 0;
+    animation: animOpacityGlobal 1s 1s linear forwards;
 }
 
 .about .about-container .about-content img{
     padding: 5px;
     background: linear-gradient(112deg,var(--tertiary) 1%,var(--secondary) 40%);
     border-radius: 50%;
+    opacity: 0;
+    animation: animOpacityGlobal 1s 1s linear forwards;
 }
 
 /* skills */
@@ -366,13 +384,7 @@ body span.info-span{
     font-weight: 500;
     font-size: 17px;
     opacity: 0;
-    animation: showText 0.5s 2s linear forwards;
-}
-
-@keyframes showText {
-    100%{
-        opacity: 1;
-    }
+    animation: animOpacityGlobal 0.5s 2s linear forwards;
 }
 
 .skill-bars .bar .progress-line{
@@ -384,13 +396,7 @@ body span.info-span{
     transform-origin: left;
     border-radius: 10px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgb(0 0 0 / 50%);
-    animation: animate 2s cubic-bezier(1,0,0.5,1) forwards;
-}
-
-@keyframes animate {
-    100%{
-        transform: scaleX(1);
-    }
+    animation: animScaleGlobal 2s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .bar .progress-line span{
@@ -400,7 +406,7 @@ body span.info-span{
     transform: scaleX(0);
     transform-origin: left;
     background: var(--primary);
-    animation: animate 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animScaleGlobal 1s 2s cubic-bezier(1,0,0.5,1) forwards;
 }
 
 .bar .progress-line.html span{
@@ -426,16 +432,16 @@ body span.info-span{
 .progress-line span::before{
     position: absolute;
     content: '';
-    top: -10px;
+    top: -8px;
     right: 0;
     height: 0;
     width: 0;
     border: 7px solid transparent;
     border-bottom-width: 0px;
     border-right-width: 0px;
-    border-top-color: #000;
+    border-top-color: rgba(0, 0, 0, .3);
     opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
+    animation: animOpacityGlobal 0.5s 1.5s linear forwards;
 }
 
 .progress-line span::after{
@@ -449,13 +455,7 @@ body span.info-span{
     font-size: 12px;
     border-radius: 3px;
     opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
-
-@keyframes showText2 {
-    100%{
-        opacity: 1;
-    }
+    animation: animOpacityGlobal 0.5s 1.5s linear forwards;
 }
 
 .progress-line.html span::after{
@@ -519,6 +519,8 @@ body span.info-span{
     margin: 30px;
     background: radial-gradient(circle, var(--primary) 0, #006ef1b8 100%);
     height: 4px;
+    transform: scaleX(0);
+    animation: animScaleGlobal 2s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .contact .contact-container .contact-content{
@@ -539,6 +541,8 @@ body span.info-span{
 .contact .contact-container .contact-content .contact-icons-main .contact-icons-content{
     margin: 10px 20px;
     text-align: center;
+    transform: scale(1.2);
+    animation: animScaleGlobal 1.2s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .contact .contact-container .contact-content .contact-icons-main .contact-icons-content span a{
@@ -555,7 +559,6 @@ body span.info-span{
     padding: 20px;
     color: var(--primary);
     border-radius: 50%;
-    transform: scale(1.2);
     border: 1px solid var(--primary);
     background: none;
     transition: all 500ms ease-in-out;
@@ -563,7 +566,7 @@ body span.info-span{
 
 .contact .contact-container .contact-content .contact-icons-main .contact-icons-content a i:hover{
     background-color: var(--primary);
-    transform: scale(1.1);
+    transform: scale(1.5);
     color: #fff;
 }
 
@@ -686,19 +689,21 @@ body span.info-span{
     text-align: center;
     width: 100%;
     background-color: #0d1117;
-    border: 1px solid #adacac83;
     border-radius: 5px;
+    transform: scale(0.5);
+    animation: animScaleGlobal 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
     text-align: center;
     -webkit-transition: .5s;
     transition: .5s;
-    box-shadow: 0 0 30px rgb(0 0 0 / 50%);
+    border: 1px solid rgb(0 0 0 / 50%);
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
 }
 
 .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-title{
     width: 100%;
     padding: 20px;
-    color: #adacac83;
-    border-bottom: 1px solid #adacac83;
+    color: var(--primary);
+    border-bottom: 1px solid rgb(0 0 0 / 50%);
 }
 
 .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content{
@@ -804,11 +809,11 @@ footer .footer-container .footer-content{
     }
 
     .progress-line span::after{
-        right: -37px;
+        right: -33px;
     }
 
     .progress-line span::before{
-        right: -7px;
+        right: -0px;
     }
 
     /* about */
