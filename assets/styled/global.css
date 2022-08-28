@@ -764,6 +764,14 @@ footer .footer-container .footer-content{
         width: 90vw;
         margin: 0 auto;
     }
+    
+    .progress-line span::after{
+        right: -33px;
+    }
+
+    .progress-line span::before{
+        right: -0px;
+    }
 
     /* contact.html */
 
@@ -795,25 +803,26 @@ footer .footer-container .footer-content{
         margin-top: -50px;
     }
 
+    .projects .projects-container{
+        padding: 10px;
+    }
+
     .projects .projects-container .projects-content .toast-container{
         margin: 0 auto;
+        width: 100%;
+    }
+
+    .projects .projects-container .projects-content .toast-container .toast-content{
         width: 100%;
     }
 
     .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content{
         padding: 30px;
     }
+    
 
     .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content img{
         width: 250px;
-    }
-
-    .progress-line span::after{
-        right: -33px;
-    }
-
-    .progress-line span::before{
-        right: -0px;
     }
 
     /* about */
