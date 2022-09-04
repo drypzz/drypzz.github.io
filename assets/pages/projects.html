@@ -99,6 +99,9 @@
                                     <div style='margin-top: 50px;'>
                                         <a target='_blank' href='https://museuinfo.netlify.app'><i class='fa-brands fa-google'></i> Visualizar Projeto</a>
                                     </div>
+                                    <div style='margin-top: 40px;'>
+                                        <button id='open-details'><i class='fa-solid fa-circle-info'></i> Detalhes</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -113,6 +116,9 @@
                                         <div style='margin-top: 50px;'>
                                             <a href='#'><i class='fa-solid fa-triangle-exclamation'></i> Indisponível</a>
                                         </div>
+                                        <div style='margin-top: 40px;'>
+                                            <button><i class='fa-solid fa-circle-info'></i> Detalhes - Indisponivel</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +127,29 @@
                 </div>
             </div>  <!-- container -->
         </div> <!-- projects -->
+        
+        <!-- modal's -->
+        <div class='modal'>
+            <div class='modal-container'>
+                <div class='modal-group'>
+                    <h1>Museu de Informática</h1>
+                </div>
+                <div class='modal-group details'>
+                    <p>Utilizado no desenvolvimento:</p>
+                    <ul>
+                        <li>HTML5 - 36.0%</li>
+                        <li>CSS3 - 34.1%</li>
+                        <li>JavaScript- 29.9%</li>
+                    </ul>
+                    <p>OBS: Website desenvolvido para fins de trabalho (curso).</p>
+                </div>
+                <div class='modal-group'>
+                    <button id='close-details'><i class='fa-solid fa-xmark'></i> Fechar</button>
+                </div>
+            </div>
+        </div>
 
+        <!-- footer -->
         <footer>
             <div class='footer-container'>
                 <div class='footer-content'>
@@ -140,5 +168,6 @@
         
         <script src='../javascript/navbar.min.js'></script>
         <script src='../javascript/functions.min.js'></script>
+        <script src='../javascript/modal.min.js'></script>
     </body>
 </html>

@@ -91,6 +91,81 @@ body span.info-span{
     padding: 5px;
 }
 
+/* modal */
+
+.modal{
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 9999;
+    pointer-events: none;
+    top: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 600ms ease-in-out;
+}
+ 
+.modal.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+ 
+.modal .modal-container{
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 500px;
+    text-align: center;
+    background-color: #0d1117;
+    border: 1px solid rgb(0 0 0 / 50%);
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+    color: var(--primary);
+}
+ 
+.modal .modal-container .modal-group{
+    margin: 20px 0;
+}
+
+.modal .modal-container .modal-group h1{
+    border-bottom: 1px solid var(--secondary);
+    margin: 0;
+}
+
+.modal .modal-container .modal-group.details{
+    opacity: .9;
+    width: 100%;
+}
+
+.modal .modal-container .modal-group.details ul{
+    margin: 15px;
+}
+
+.modal .modal-container .modal-group.details ul li{
+    text-align: left;
+    list-style: circle;
+}
+
+.modal .modal-container .modal-group button{
+    padding: 10px;
+    width: 80%;
+    background: none;
+    border-radius: 5px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 600ms ease-in-out;
+    border: 1px solid var(--primary);
+}
+
+.modal .modal-container .modal-group button:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
 /* anim's */
 
 @keyframes animOpacityGlobal {
@@ -714,6 +789,23 @@ body span.info-span{
     width: 400px;
     margin: 0 auto;
     border: 5px solid var(--primary);
+}
+
+.projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content div button{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: none;
+    transition: all 600ms ease-in-out;
+    cursor: pointer;
+}
+
+.projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content div button:hover{
+    background-color: var(--primary);
+    color: #fff;
 }
 
 .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content div a{
