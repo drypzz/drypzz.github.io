@@ -1,11 +1,11 @@
 const open = document.querySelector('#open-details');
 const close = document.querySelector('#close-details');
-const modal = document.querySelector('.modal');
+const popup = document.querySelector('.popup');
 
 open.addEventListener('click', () => {
-    modal.classList.add('show');
+    popup.classList.add('show');
 });
 
 close.addEventListener('click', () => {
-    modal.classList.remove('show');
+    popup.classList.remove('show');
 });

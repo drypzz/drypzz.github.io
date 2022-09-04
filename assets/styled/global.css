@@ -93,7 +93,7 @@ body span.info-span{
 
 /* modal */
 
-.modal{
+.popup{
     position: fixed;
     left: 0;
     background-color: rgba(0, 0, 0, .7);
@@ -110,12 +110,12 @@ body span.info-span{
     transition: opacity 600ms ease-in-out;
 }
  
-.modal.show{
+.popup.show{
     pointer-events: auto;
     opacity: 1;
 }
  
-.modal .modal-container{
+.popup .popup-container{
     max-width: 100%;
     border-radius: 5px;
     padding: 30px 50px;
@@ -127,30 +127,30 @@ body span.info-span{
     color: var(--primary);
 }
  
-.modal .modal-container .modal-group{
+.popup .popup-container .popup-group{
     margin: 20px 0;
 }
 
-.modal .modal-container .modal-group h1{
+.popup .popup-container .popup-group h1{
     border-bottom: 1px solid var(--secondary);
     margin: 0;
 }
 
-.modal .modal-container .modal-group.details{
+.popup .popup-container .popup-group.details{
     opacity: .9;
     width: 100%;
 }
 
-.modal .modal-container .modal-group.details ul{
+.popup .popup-container .popup-group.details ul{
     margin: 15px;
 }
 
-.modal .modal-container .modal-group.details ul li{
+.popup .popup-container .popup-group.details ul li{
     text-align: left;
     list-style: circle;
 }
 
-.modal .modal-container .modal-group button{
+.popup .popup-container .popup-group button{
     padding: 10px;
     width: 80%;
     background: none;
@@ -161,7 +161,7 @@ body span.info-span{
     border: 1px solid var(--primary);
 }
 
-.modal .modal-container .modal-group button:hover{
+.popup .popup-container .popup-group button:hover{
     background-color: var(--primary);
     color: #fff;
 }
