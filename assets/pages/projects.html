@@ -97,10 +97,10 @@
                                 <div class='modal-projects-content'>
                                     <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/museu.png' alt='Error'>
                                     <div style='margin-top: 50px;'>
-                                        <a target='_blank' href='https://museuinfo.netlify.app'><i class='fa-brands fa-google'></i> Visualizar Projeto</a>
+                                        <a target='_blank' href='https://museuinfo.netlify.app'><i class='fa-solid fa-eye'></i> - Visualizar Projeto</a>
                                     </div>
                                     <div style='margin-top: 40px;'>
-                                        <button id='open-details'><i class='fa-solid fa-circle-info'></i> Detalhes</button>
+                                        <button id='open-details-museuinfo'><i class='fa-solid fa-circle-info'></i> Detalhes</button>
                                     </div>
                                 </div>
                             </div>
@@ -109,15 +109,15 @@
                             <div class='toast-content'>
                                 <div class='modal-projects'>
                                     <div class='modal-projects-title'>
-                                        <span>Nada a informar.</span>
+                                        <span>Sr. & Sra. Bem Estar</span>
                                     </div>
                                     <div class='modal-projects-content'>
-                                        <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/3136/image-not-found.jpg' alt='Error'>
+                                        <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/pi.png' alt='Error'>
                                         <div style='margin-top: 50px;'>
-                                            <a href='#'><i class='fa-solid fa-triangle-exclamation'></i> Indisponível</a>
+                                            <a href='https://sresrabemestar.netlify.app'><i class='fa-solid fa-eye'></i> - Visualizar Projeto</a>
                                         </div>
                                         <div style='margin-top: 40px;'>
-                                            <button><i class='fa-solid fa-circle-info'></i> Detalhes - Indisponivel</button>
+                                            <button id='open-details-sresra'><i class='fa-solid fa-circle-info'></i> Detalhes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
         </div> <!-- projects -->
         
         <!-- popup's -->
-        <div class='popup'>
+        <div class='popup' id='museuinfo' >
             <div class='popup-container'>
                 <div class='popup-group'>
                     <h1>Museu de Informática</h1>
@@ -139,12 +139,33 @@
                     <ul>
                         <li>HTML5 - 36.0%</li>
                         <li>CSS3 - 34.1%</li>
-                        <li>JavaScript- 29.9%</li>
+                        <li>JavaScript - 29.9%</li>
                     </ul>
-                    <p>OBS: Website desenvolvido para fins de trabalho (curso).</p>
+                    <p><i>OBS: Website desenvolvido para fins de trabalho (curso).</i></p>
                 </div>
                 <div class='popup-group'>
-                    <button id='close-details'><i class='fa-solid fa-xmark'></i> Fechar</button>
+                    <button id='close-details-museuinfo'><i class='fa-solid fa-xmark'></i> - Fechar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class='popup' id='sresra'>
+            <div class='popup-container'>
+                <div class='popup-group'>
+                    <h1>Sr. & Sra. Bem Estar</h1>
+                </div>
+                <div class='popup-group details'>
+                    <p>Sendo utilizado no desenvolvimento:</p>
+                    <ul>
+                        <li>HTML5 - 45.5%</li>
+                        <li>CSS3 - 40.4%</li>
+                        <li>JavaScript - 8.9%</li>
+                        <li>PHP- 5.2%</li>
+                    </ul>
+                    <p><i>OBS: Website em desenvolvimento.</i></p>
+                </div>
+                <div class='popup-group'>
+                    <button id='close-details-sresra'><i class='fa-solid fa-xmark'></i> - Fechar</button>
                 </div>
             </div>
         </div>
