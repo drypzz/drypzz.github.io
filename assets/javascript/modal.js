@@ -21,3 +21,15 @@ open_sresra.addEventListener('click', () => {
 close_sresra.addEventListener('click', () => {
     popup_sresra.classList.remove('show');
 });
+
+const open_io = document.querySelector('#open-details-io');
+const close_io = document.querySelector('#close-details-io');
+const popup_io = document.querySelector('#io');
+
+open_io.addEventListener('click', () => {
+    popup_io.classList.add('show');
+});
+
+close_io.addEventListener('click', () => {
+    popup_io.classList.remove('show');
+});
