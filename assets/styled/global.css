@@ -323,7 +323,12 @@ body span.info-span{
 
 .navbar-links:hover:after{
     transform: scaleX(1);
+    background-color: var(--body);
     height: 1px;
+}
+
+.navbar-links:hover{
+    color: var(--body);
 }
 
 .navbar-links.active:after{
@@ -1075,10 +1080,16 @@ footer .footer-container .footer-content{
 
     .navbar-links:hover:after{
         transform: scaleX(.4);
+        background-color: var(--primary);
+    }
+
+    .navbar-links:hover{
+        color: var(--primary)
     }
 
     .navbar-links.active:after{
-        transform: scaleX(.8);
+        transform: scaleX(.4);
+        background-color: var(--primary);
     }
 
     .navbar-item:hover{
