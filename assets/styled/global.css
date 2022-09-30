@@ -192,6 +192,15 @@ body span.info-span{
     }
 }
 
+@keyframes animTextInner {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
 /* loader */
 
 .loader-container{
@@ -225,6 +234,31 @@ body span.info-span{
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+}
+
+.loader-container .loader-text{
+    margin-top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.loader-container .loader-text span{
+    position: relative;
+    color: white;
+    margin-left: 3px;
+}
+
+.loader-container .loader-text span:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--body);
+    animation: animTextInner 700ms steps(3) infinite;
 }
 
 /* scroll */
