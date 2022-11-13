@@ -39,3 +39,17 @@ close_io.addEventListener('click', () => {
     popup_io.classList.remove('show');
     document.querySelector('body').style = 'overflow: auto;';
 });
+
+const open_thyagoof = document.querySelector('#open-details-thyagoof');
+const close_thyagoof = document.querySelector('#close-details-thyagoof');
+const popup_thyagoof = document.querySelector('#thyagoof');
+
+open_thyagoof.addEventListener('click', () => {
+    popup_thyagoof.classList.add('show');
+    document.querySelector('body').style = 'overflow: hidden;';
+});
+
+close_thyagoof.addEventListener('click', () => {
+    popup_thyagoof.classList.remove('show');
+    document.querySelector('body').style = 'overflow: auto;';
+});

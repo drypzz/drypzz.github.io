@@ -3,7 +3,7 @@
 </div>
 
 <div align='center'>
-    <p><strong>Ultima atualização:</strong> 14 Out. 2022<br><strong>Última versão:</strong> 1.4.0</p>
+    <p><strong>Ultima atualização:</strong> 13 Nov. 2022<br><strong>Última versão:</strong> 1.4.2</p>
     <p>>> <a target='_blank' href='https://drypzz.github.io/'><i>https://drypzz.github.io/</i></a> <<</p>
 </div>
 

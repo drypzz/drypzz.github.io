@@ -33,7 +33,7 @@
 
         <title>Projetos - @elseif</title>
 
-        <link rel='stylesheet' href='../styled/global.min.css'>
+        <link rel='stylesheet' href='../styled/global.css'>
 
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'>
 
@@ -145,6 +145,24 @@
                                 </div>
                             </div>
                         </div>
+                        <div class='toast-container'>
+                            <div class='toast-content'>
+                                <div class='modal-projects'>
+                                    <div class='modal-projects-title'>
+                                        <span>Thyagoof Media - Website</span>
+                                    </div>
+                                    <div class='modal-projects-content'>
+                                        <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/thyagoof.png' alt='Error'>
+                                        <div style='margin-top: 50px;'>
+                                            <a target='_blank' href='https://thyagoofmedia.000webhostapp.com/'><i class='fa-solid fa-eye'></i> - Visualizar Projeto</a>
+                                        </div>
+                                        <div style='margin-top: 40px;'>
+                                            <button id='open-details-thyagoof'><i class='fa-solid fa-circle-info'></i> - Detalhes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>  <!-- container -->
@@ -198,7 +216,7 @@
                     <h1>Personal Website</h1>
                 </div>
                 <div class='popup-group details'>
-                    <p>Sendo utilizado no desenvolvimento:</p>
+                    <p>Utilizado no desenvolvimento:</p>
                     <ul>
                         <li>HTML5 - 51.0%</li>
                         <li>CSS3 - 43.3%</li>
@@ -208,6 +226,25 @@
                 </div>
                 <div class='popup-group'>
                     <button id='close-details-io'><i class='fa-solid fa-xmark'></i> - Fechar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class='popup' id='thyagoof'>
+            <div class='popup-container'>
+                <div class='popup-group'>
+                    <h1>Thyagoof Media - Website</h1>
+                </div>
+                <div class='popup-group details'>
+                    <p>Utilizado no desenvolvimento:</p>
+                    <ul>
+                        <li>CSS3 - 29.4%</li>
+                        <li>JavaScript - 1.2%</li>
+                        <li>PHP- 69.4%</li>
+                    </ul>
+                </div>
+                <div class='popup-group'>
+                    <button id='close-details-thyagoof'><i class='fa-solid fa-xmark'></i> - Fechar</button>
                 </div>
             </div>
         </div>
@@ -229,8 +266,8 @@
             });
         </script>
         
-        <script src='../javascript/navbar.min.js'></script>
-        <script src='../javascript/functions.min.js'></script>
-        <script src='../javascript/modal.min.js'></script>
+        <script src='../javascript/navbar.js'></script>
+        <script src='../javascript/functions.js'></script>
+        <script src='../javascript/modal.js'></script>
     </body>
 </html>
