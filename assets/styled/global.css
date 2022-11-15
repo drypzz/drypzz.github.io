@@ -874,7 +874,7 @@ body span.info-span{
 }
 
 .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content img{
-    width: 400px;
+    width: 450px;
     margin: 0 auto;
     border: 5px solid var(--primary);
 }
@@ -1002,7 +1002,8 @@ footer .footer-container .footer-content{
     
 
     .projects .projects-container .projects-content .toast-container .toast-content .modal-projects .modal-projects-content img{
-        width: 250px;
+        width: 100%;
+        border: 2px solid var(--primary);
     }
 
     /* about */
