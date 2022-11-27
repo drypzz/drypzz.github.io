@@ -239,6 +239,29 @@ body span.info-span{
     }
 }
 
+@-webkit-keyframes floatAnim{
+    0%{
+        transform:translatey(-10%)
+    }
+    50%{
+        transform:translatey(-5%)
+    }
+    to{
+        transform:translatey(-10%)
+    }
+}
+
+@keyframes floatAnim{
+    0%{
+        transform:translatey(-10%)
+    }
+    50%{
+        transform:translatey(-5%)
+    }
+    to{
+        transform:translatey(-10%)
+    }
+}
 
 /* snow */
 
@@ -559,7 +582,6 @@ body span.info-span{
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 10;
     background-attachment: fixed;
 }
 
@@ -571,10 +593,11 @@ body span.info-span{
     left: -35%;
     right: 0;
     bottom: 0;
-    top: 120px;
-    z-index: -10;
+    top: 20vh;
     background: url(../gfx/christmas/noel.png) center center / 150px no-repeat;
     transform: rotate(5deg);
+    -webkit-animation: floatAnim 6s ease-in-out infinite;
+    animation: floatAnim 6s ease-in-out infinite
 }
 
 .main .container{
@@ -1121,7 +1144,7 @@ footer .footer-container .footer-content a{
     }
 
     .main#index:before{
-        top: 250px;
+        top: 40vh;
     }
 
     /* skills */
