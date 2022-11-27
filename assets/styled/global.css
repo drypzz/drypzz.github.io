@@ -591,7 +591,7 @@ body span.info-span{
     margin: 10px 0;
 }
 
-.main .container .main-content img{
+.main .container .main-content.img img{
     width: 300px;
     background-color: var(--body);
     border-radius: 50%;
