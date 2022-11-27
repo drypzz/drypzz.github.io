@@ -563,7 +563,7 @@ body span.info-span{
     background-attachment: fixed;
 }
 
-.main:before{
+.main#index:before{
     position: absolute;
     content: '';
     width: 100%;
@@ -1093,12 +1093,18 @@ footer .footer-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 footer .footer-container .footer-content{
-    margin: 0 20px;
+    margin: 5px;
     color: #fff;
     text-align: center;
+}
+
+footer .footer-container .footer-content a{
+    color: var(--body);
+    border-bottom: 1px solid var(--body);
 }
 
 /* responsive */
@@ -1114,7 +1120,7 @@ footer .footer-container .footer-content{
         position: absolute;
     }
 
-    .main:before{
+    .main#index:before{
         top: 250px;
     }
 
