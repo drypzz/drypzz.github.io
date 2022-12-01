@@ -40,6 +40,10 @@
         <link rel='shortcut icon' href='https://avatars.githubusercontent.com/u/79218936?v=4' type='image/x-icon'>
     </head>
     <body>
+        <noscript>
+            <strong>We're sorry but my portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript>
+        
         <!-- loader -->
         <div class='loader-container'>
             <div class='loader'></div>
@@ -115,7 +119,7 @@
                                     <span>Museu de Informática</span>
                                 </div>
                                 <div class='modal-projects-content'>
-                                    <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/museu.png' alt='Error'>
+                                    <button id='button-1' class='button-carousel'><img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/museu.png' alt='Error'></button>
                                     <div style='margin-top: 50px;'>
                                         <a target='_blank' href='https://museuinfo.netlify.app'><i class='fa-solid fa-eye'></i> - Visualizar Projeto</a>
                                     </div>
@@ -132,7 +136,7 @@
                                         <span>Sr. & Sra. Bem Estar</span>
                                     </div>
                                     <div class='modal-projects-content'>
-                                        <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/pi.png' alt='Error'>
+                                        <button id='button-2' class='button-carousel'><img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/pi.png' alt='Error'></button>
                                         <div style='margin-top: 50px;'>
                                             <a target='_blank' href='https://sresrabemestar.000webhostapp.com/'><i class='fa-solid fa-eye'></i> - Visualizar Projeto</a>
                                         </div>
@@ -150,7 +154,7 @@
                                         <span>Personal Website</span>
                                     </div>
                                     <div class='modal-projects-content'>
-                                        <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/io.png' alt='Error'>
+                                        <button id='button-3' class='button-carousel'><img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/io.png' alt='Error'></button>
                                         <div style='margin-top: 50px;'>
                                             <a target='_blank' href='https://drypzz.github.io/'><i class='fa-solid fa-eye'></i> - Visualizar Projeto</a>
                                         </div>
@@ -168,7 +172,7 @@
                                         <span>Thyagoof Media - Website</span>
                                     </div>
                                     <div class='modal-projects-content'>
-                                        <img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/thyagoof.png' alt='Error'>
+                                        <button id='button-4' class='button-carousel'><img style='display: block;' class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/thyagoof.png' alt='Error'></button>
                                         <div style='margin-top: 50px;'>
                                             <a href='#'><i class='fa-solid fa-eye'></i> - Indisponivel</a>
                                         </div>
@@ -287,5 +291,6 @@
         <script src='../javascript/navbar.js'></script>
         <script src='../javascript/functions.js'></script>
         <script src='../javascript/modal.js'></script>
+        <script src='../javascript/carousel.js'></script>
     </body>
 </html>
