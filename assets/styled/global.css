@@ -839,23 +839,23 @@ body span.info-span{
 }
 
 .bar .progress-line.html span{
-    width: 90%;
+    width: 80%;
 }
 
 .bar .progress-line.css span{
-    width: 70%;
+    width: 65%;
 }
 
 .bar .progress-line.js span{
-    width: 30%;
+    width: 25%;
 }
 
 .bar .progress-line.php span{
-    width: 20%;
+    width: 35%;
 }
 
 .bar .progress-line.sql span{
-    width: 10%;
+    width: 15%;
 }
 
 .progress-line span::before{
@@ -888,23 +888,23 @@ body span.info-span{
 }
 
 .progress-line.html span::after{
-    content: '90%';
+    content: '80%';
 }
 
 .progress-line.css span::after{
-    content: '70%';
+    content: '65%';
 }
 
 .progress-line.js span::after{
-    content: '30%';
+    content: '25%';
 }
 
 .progress-line.php span::after{
-    content: '20%';
+    content: '35%';
 }
 
 .progress-line.sql span::after{
-    content: '10%';
+    content: '15%';
 }
 
 /* contact.html */
