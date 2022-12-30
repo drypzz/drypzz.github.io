@@ -7,15 +7,15 @@
 
 :root{
     /* colors */
-    --primary: #037edb;
+    --primary: #dfb049;
     
-    --secondary: #0095ff9a;
-    --tertiary: #0095ff;
+    --secondary: #dfb0499a;
+    --tertiary: #1b1b1a;
 
-    --quarto: #037ddb96;
+    --quarto: #a7741e96;
     --quinto: #0d0e0f;
 
-    --body: #0d1117;
+    --body: #1b1b1a;
 }
 
 /* global */
@@ -85,7 +85,7 @@ body span.info{
 }
 
 body span.info-span{
-    color: #0095ff;
+    color: var(--primary);
     background-color: var(--body);
     border-radius: 5px;
     padding: 5px;
@@ -158,7 +158,7 @@ body span.info-span{
 
 .popup .container .wrapper img{
     width: 100%;
-    border: 10px solid var(--primary);
+    border: 5px solid var(--primary);
     object-fit: cover;
 }
 
@@ -555,9 +555,9 @@ body span.info-span{
 
 .navbar-logo a img{
     width: 80px;
-    background-color: var(--body);
+    background: linear-gradient(350deg, var(--tertiary) 2%, var(--secondary) 50%);
     border-radius: 50%;
-    border: 2px solid var(--body);
+    padding: 2px;
 }
 
 /* menu */
@@ -666,9 +666,9 @@ body span.info-span{
     pointer-events: none;
     right: 0;
     bottom: 0;
-    top: 20vh;
-    background: url(../gfx/christmas/noel.png) center center / 150px no-repeat;
-    transform: rotate(5deg);
+    top: 25vh;
+    background: url(../gfx/2023/year.png) center center / 150px no-repeat;
+    transform: rotate(10deg);
     -webkit-animation: floatAnim 6s ease-in-out infinite;
     animation: floatAnim 6s ease-in-out infinite
 }
@@ -698,18 +698,6 @@ body span.info-span{
     line-height: 50px;
 }
 
-.main .container .main-content h1:after{
-    position: absolute;
-    user-select: none;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background: url(../gfx/christmas/gorro.png) 220px center / 50px no-repeat;
-}
-
 .main .container .main-content p{
     color: #fff;
     user-select: none;
@@ -718,9 +706,9 @@ body span.info-span{
 
 .main .container .main-content.img img{
     width: 300px;
-    background-color: var(--body);
+    background: linear-gradient(350deg, var(--tertiary) 2%, var(--secondary) 50%);
     border-radius: 50%;
-    border: 3px solid var(--body);
+    padding: 5px;
 }
 
 .main .container .main-content .main-btn{
@@ -881,7 +869,7 @@ body span.info-span{
     right: 0;
     font-weight: 500;
     background: rgba(0, 0, 0, .3);
-    color: #fff;
+    color: var(--primary);
     padding: 1px 8px;
     font-size: 12px;
     border-radius: 3px;
@@ -948,7 +936,7 @@ body span.info-span{
     outline: none;
     border: none;
     margin: 30px;
-    background: radial-gradient(circle, var(--primary) 0, #006ef1b8 100%);
+    background: radial-gradient(circle, var(--primary) 0, var(--quarto) 100%);
     height: 4px;
     transform: scaleX(0);
     animation: animScaleGlobal 2s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -1119,7 +1107,7 @@ body span.info-span{
 .projects .projects-container .projects-content .toast-container .toast-content .modal-projects{
     text-align: center;
     width: 100%;
-    background-color: #0d1117;
+    background-color: var(--body);
     border-radius: 5px;
     transform: scale(0.5);
     animation: animScaleGlobal 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -1226,7 +1214,7 @@ footer .footer-container .footer-content a{
     }
 
     .main#index:before{
-        top: 40vh;
+        display: none;
     }
 
     .popup .container{
