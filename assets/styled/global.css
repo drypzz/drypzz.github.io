@@ -192,7 +192,7 @@ body span.info-span{
     padding: 30px 50px;
     width: 500px;
     text-align: center;
-    background-color: #0d1117;
+    background-color: var(--body);
     border: 1px solid rgb(0 0 0 / 50%);
     box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
     color: var(--primary);
@@ -708,6 +708,22 @@ body span.info-span{
     width: 300px;
     background: linear-gradient(350deg, var(--tertiary) 2%, var(--secondary) 50%);
     border-radius: 50%;
+    padding: 5px;
+}
+
+.main .container .main-content.img span#details-desc{
+    display: none;
+}
+
+.main .container .main-content.img img:hover + span#details-desc{
+    opacity: 1;
+    margin: 0 auto;
+    text-align: center;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, .3);
+    color: var(--primary);
+    display: block;
+    border-radius: 5px;
     padding: 5px;
 }
 
