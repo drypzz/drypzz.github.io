@@ -557,6 +557,7 @@ body span.info-span{
     width: 80px;
     background-color: var(--body);
     border-radius: 50%;
+    border: 2px solid var(--body);
 }
 
 /* menu */
@@ -719,6 +720,7 @@ body span.info-span{
     width: 300px;
     background-color: var(--body);
     border-radius: 50%;
+    border: 3px solid var(--body);
 }
 
 .main .container .main-content .main-btn{
