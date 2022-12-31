@@ -727,6 +727,7 @@ body span.info-span{
     padding: 5px;
 }
 
+
 .main .container .main-content .main-btn{
     height: 100%;
     display: flex;
@@ -789,6 +790,22 @@ body span.info-span{
     border-radius: 50%;
     opacity: 0;
     animation: animOpacityGlobal 1s 1s linear forwards;
+}
+
+.about .about-container .about-content span#details-desc{
+    display: none;
+}
+
+.about .about-container .about-content img:hover + span#details-desc{
+    opacity: 0.8;
+    margin: 0 auto;
+    text-align: center;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, .3);
+    color: var(--primary);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* skills */
