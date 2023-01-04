@@ -364,6 +364,8 @@ body span.info-span{
     position: absolute;
     top: 0;
     z-index: 999;
+    transform: scale(.9);
+    animation: animScaleGlobal 2s cubic-bezier(1, 0, 1, 1) forwards;
 }
 
 .navbar-container{
@@ -502,10 +504,14 @@ body span.info-span{
     margin-top: 100px;
     padding: 20px;
     height: 100%;
+    opacity: 0;
+    animation: animOpacityGlobal 1s .5s linear forwards;
 }
 
 .main .container .main-content.img{
     padding: 0;
+    opacity: 0;
+    animation: animOpacityGlobal 1s .3s linear forwards;
 }
 
 .main .container .main-content h1{
